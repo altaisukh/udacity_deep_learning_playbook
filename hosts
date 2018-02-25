@@ -1,6 +1,6 @@
 [all:vars]
 # AWS Key Pair Name. You can create one on the EC2 Dashboard under Network & Security > Key Pairs. Press "Create Key Pairs"
-key_name=food-group
+key_name=<key_name>
 
 # The instance type. Per the "Cloud Computing" instructions, the recommended type is p2.xlarge
 instance_type=p2.xlarge
@@ -12,7 +12,7 @@ image=ami-f616b88e
 
 # AWS security group name. You can find it under Network & Security > Security Groups. 
 # Ensure that you have allowed {type: ssh, protocol: TCP, port: 22, source: custom 0.0.0.0/0}
-security_group=food-group
+security_group=<security_group_name>
 
 # AWS VPC Subnet ID. You can look this up on the VPC dashboard under Subnets. 
 vpc_subnet_id=subnet-e2f59885
@@ -20,7 +20,7 @@ vpc_subnet_id=subnet-e2f59885
 # AWS region. The region you are using. 
 region=us-west-2
 
-private_key=/Users/jesslampe/Dev/udacity_deep_learning_playbook/food-group.pem
+private_key=<private_key_name>
 
 # The username in the instance. For Deep Learning AMI, this is ubuntu
 user=ubuntu
