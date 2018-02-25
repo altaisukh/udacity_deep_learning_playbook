@@ -21,7 +21,7 @@ cd <path to cloned repo>
 source deep-learning/bin/activate
 ```
 
-3. Copy the .pem file associated with your key pair into the udacity_deep_learning_playbook repo with the name "private-key.pem". Otherwise, rename the private key name in the hosts file. 
+3. Update the hosts file with the appropriate values relevant to your AWS account. 
 
 4. Run the playbook
 ```
@@ -29,4 +29,6 @@ ansible-playbook -i hosts setup_dl_ec2.yaml
 ```
 
 ## How to contribute?
-
+1. Clone on to your computer
+2. Work on new branch
+3. Push branch to origin and make pull request!
